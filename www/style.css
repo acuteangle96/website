@@ -34,40 +34,28 @@ div.body{
   width: 80%;
 }
 
-div.blog-parent{
-  display: table;
-  overflow: hidden;
-  position: relative;
+table.blog-layout{
+  border: 0px;
   width: 100%;
 }
 
-div.blog-left, div.blog-right{
-  background-color: #996;
-  border-radius: 40px;
-  color: #100;
-  display: table-cell;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 32pt;
+td.blog-prison{
   margin: 16px;
   padding: 0px;
+}
+
+a.blog-tab{
+  /*background-color: #996;*/
+  border-radius: 40px;
+  color: #FFF;
+  display: block;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 32pt;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
-  width: 400px;
-}
-
-div.blog-left{
-  left: 0;
-  position: relative;
-}
-
-div.blog-right{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-a.blog-link{
-  /*display: block;*/
   text-decoration: none;
+  width: 100%;
 }
 
 a.nav:link, a.nav:visited{
@@ -88,5 +76,15 @@ a.nav:hover, a.nav:active{
     font-size: x-large;
     margin-top: 0px;
     width: 100%;
+  }
+}
+
+div.blog-block{
+  visibility: hidden;
+}
+
+@media all and (min-aspect-ratio: 8/5){
+  div.blog-block{
+    visibility: visible;
   }
 }
