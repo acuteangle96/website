@@ -12,6 +12,10 @@ body{
   padding: 0px;
 }
 
+h1{
+  margin-left: 32px;
+}
+
 div.head{
   background-color: #002;
   color: #FFF;
@@ -30,6 +34,7 @@ div.body{
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%
   padding: 16px;
   width: 80%;
 }
@@ -70,6 +75,21 @@ a.nav:link, a.nav:visited{
 a.nav:hover, a.nav:active{
   background-color: #999;
 }
+
+img.align-left{
+  float: left;
+  height: auto;
+  margin: 0px 16px 0px 16px;
+  width: auto;
+}
+
+img.align-right{
+  float: right;
+  height: auto;
+  margin: 0px 16px 0px 16px;
+  width: auto;
+}
+
 
 @media all and (max-aspect-ratio: 8/5){
   div.body{
